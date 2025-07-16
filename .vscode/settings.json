@@ -1,0 +1,16 @@
+{
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++",
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp",
+        "__node_handle": "cpp",
+        "new": "cpp",
+        "queue": "cpp",
+        "unordered_map": "cpp",
+        "iosfwd": "cpp",
+        "set": "cpp",
+        "__locale": "cpp",
+        "string": "cpp"
+    }
+}
