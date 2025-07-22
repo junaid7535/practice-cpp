@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    string s = "geeksforgeeks";
+    string s = "sdfa";
     int n = s.size();
     vector<int>consecutive(s.size());
     consecutive[0] = 0;
