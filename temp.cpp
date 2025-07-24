@@ -5,17 +5,13 @@
 using namespace std;
 
 int main(){
-    string s = "sdfa";
-    int n = s.size();
-    vector<int>consecutive(s.size());
-    consecutive[0] = 0;
+    int n = 16;
+    string s;
 
-    int k = 2;
-    for(int i = 0; i < n; i++){
-            if(consecutive[i] == k){
-                cout << s.substr(i-k+1,k);
-                s.erase(i - k+1,k);
-            }
-        }
-        //cout << s;
+    while(n > 0){
+        s += n % 2 == 0 ? '0' : '1';
+        n /= 2;
+    }
+    reverse(s.begin(),s.end());
+    cout << s;
 }
