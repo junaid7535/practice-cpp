@@ -4,14 +4,22 @@
 #include<map>
 using namespace std;
 
-int main(){
-    int n = 16;
-    string s;
+class Animal{
+    private:
+    int age;
 
-    while(n > 0){
-        s += n % 2 == 0 ? '0' : '1';
-        n /= 2;
+    public: 
+    Animal(){
+        age = 5;
     }
-    reverse(s.begin(),s.end());
-    cout << s;
+
+    friend void Cat(Animal);
+};
+
+void Cat(Animal a){
+    cout << a.age;
+}
+int main(){
+    Animal a;
+    Cat(a);
 }
